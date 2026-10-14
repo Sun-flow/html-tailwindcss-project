@@ -47,6 +47,7 @@ An **artist portfolio website** — a polished, production-ready static site bui
 | File | Description |
 |---|---|
 | `index.html` | Main portfolio page — the primary entry point. Contains hero, about, career, and shows sections. |
+| `styles.css` | Custom CSS supplementing Tailwind — 7 features: design tokens, smooth scroll + navbar offset, masonry gallery, image hover, timeline polish, print styles, shimmer placeholders |
 | `server.py` | Flask dev server; serves static files, falls back to 404 page; port 3000 |
 | `AGENTS.md` | Project brief for AI agents; references `.agents/rules/` |
 | `.agents/rules/semantic-html.md` | Agent rule: semantic elements over divs |

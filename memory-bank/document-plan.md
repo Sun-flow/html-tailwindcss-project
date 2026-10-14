@@ -29,6 +29,7 @@ This is the **index/hub file** for the memory bank. Every file in `memory-bank/`
 | `learn.json` | Template metadata for 4Geeks Academy |
 | `memory-bank-generator-prompt.md` | The prompt used to generate this memory bank — an init instruction for AI agents |
 | `assets/content.md` | Human-readable content source: all placeholder text extracted from `index.html` by section, for editing and autopopulation |
+| `styles.css` | Custom stylesheet complementing Tailwind — 7 features: design tokens, smooth scroll + navbar offset, masonry gallery, image hover, timeline polish, print styles, shimmer placeholders |
 
 ## Agent Configuration
 
