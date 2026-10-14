@@ -128,7 +128,7 @@
           <img
             src="https://via.placeholder.com/200x200/e7e5e4/44403c?text=Photo"
             alt="[Artist Name] — portrait or representative artwork"
-            class="mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
+            class="shimmer mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
           />
         </figure>
 
@@ -162,15 +162,15 @@
          Full height. Replace placeholder text with the artist's bio.
          Add or remove <p> tags as needed.
          ============================================================ -->
-    <section id="about" class="flex min-h-screen items-center bg-white px-6">
+    <section id="about" class="flex min-h-screen items-center bg-white px-6 pt-2 pb-6">
       <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
 
         <!-- Image column — replace src and alt -->
-        <figure class="order-2 md:order-1">
+        <figure class="order-2 md:order-1 card-image-wrapper">
           <img
             src="https://via.placeholder.com/600x700/e7e5e4/44403c?text=Artist+Image"
             alt="[Artist Name] in their studio or a detail of their work"
-            class="h-auto w-full rounded-2xl object-cover shadow-lg"
+            class="h-auto w-full rounded-2xl object-cover shadow-lg shimmer"
           />
           <figcaption class="mt-2 text-sm text-stone-400 text-center">
             [Optional caption for the image]
@@ -230,7 +230,7 @@
          Full height. Timeline-style layout for career milestones.
          Each milestone is an <article> — duplicate as needed.
          ============================================================ -->
-    <section id="career" class="flex min-h-screen items-center bg-stone-100 px-6">
+    <section id="career" class="flex min-h-screen items-center bg-stone-100 px-6 py-6">
       <div class="mx-auto max-w-4xl">
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
           Career
@@ -240,15 +240,15 @@
         </p>
 
         <!-- Timeline container -->
-        <div class="relative mt-12 space-y-12 before:absolute before:left-4 before:top-0 before:h-full before:w-0.5 before:bg-stone-300 md:before:left-1/2 md:before:-translate-x-px">
+        <div class="timeline relative mt-12 space-y-12 before:absolute before:left-4 before:top-0 before:h-full before:w-0.5 before:bg-stone-300 md:before:left-1/2 md:before:-translate-x-px">
 
           <!-- =====================================================
                CAREER ENTRY — Duplicate this <article> block for each
                milestone. Update year, title, description, and tags.
                ===================================================== -->
-          <article class="relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
+          <article class="group relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
             <!-- Timeline dot -->
-            <span class="absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:left-auto md:even:left-2 md:odd:right-2" aria-hidden="true"></span>
+            <span class="timeline-dot absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:group-odd:left-auto md:group-odd:right-0 md:group-odd:translate-x-1/2 md:group-even:left-0 md:group-even:-translate-x-1/2" aria-hidden="true"></span>
 
             <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2026</time>
             <h3 class="mt-1 text-xl font-semibold text-stone-800">
@@ -267,8 +267,8 @@
           </article>
 
           <!-- Example second entry — ready to be filled in -->
-          <article class="relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
-            <span class="absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:left-auto md:even:left-2 md:odd:right-2" aria-hidden="true"></span>
+          <article class="group relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
+            <span class="timeline-dot absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:group-odd:left-auto md:group-odd:right-0 md:group-odd:translate-x-1/2 md:group-even:left-0 md:group-even:-translate-x-1/2" aria-hidden="true"></span>
 
             <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2025</time>
             <h3 class="mt-1 text-xl font-semibold text-stone-800">
@@ -286,8 +286,8 @@
           </article>
 
           <!-- Example third entry -->
-          <article class="relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
-            <span class="absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:left-auto md:even:left-2 md:odd:right-2" aria-hidden="true"></span>
+          <article class="group relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
+            <span class="timeline-dot absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:group-odd:left-auto md:group-odd:right-0 md:group-odd:translate-x-1/2 md:group-even:left-0 md:group-even:-translate-x-1/2" aria-hidden="true"></span>
 
             <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2023</time>
             <h3 class="mt-1 text-xl font-semibold text-stone-800">
@@ -317,7 +317,7 @@
          Full height. Card grid for upcoming events.
          Each show is an <article> — duplicate as needed.
          ============================================================ -->
-    <section id="shows" class="flex min-h-screen items-center bg-white px-6">
+    <section id="shows" class="flex min-h-screen items-center bg-white px-6 py-6">
       <div class="mx-auto max-w-6xl">
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
           Upcoming Shows
@@ -335,11 +335,11 @@
                ===================================================== -->
           <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
             <!-- Event image — replace src and alt. Remove <figure> if no image. -->
-            <figure class="mb-4 overflow-hidden rounded-xl">
+            <figure class="card-image-wrapper mb-4 overflow-hidden rounded-xl">
               <img
                 src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
                 alt="Promotional image for [Show Name]"
-                class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                class="h-48 w-full object-cover shimmer"
               />
             </figure>
 
@@ -370,11 +370,11 @@
 
           <!-- Second show card — ready to be filled -->
           <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-            <figure class="mb-4 overflow-hidden rounded-xl">
+            <figure class="card-image-wrapper mb-4 overflow-hidden rounded-xl">
               <img
                 src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
                 alt="Promotional image for [Show Name]"
-                class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                class="h-48 w-full object-cover shimmer"
               />
             </figure>
 
@@ -403,11 +403,11 @@
 
           <!-- Third show card — ready to be filled -->
           <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-            <figure class="mb-4 overflow-hidden rounded-xl">
+            <figure class="card-image-wrapper mb-4 overflow-hidden rounded-xl">
               <img
                 src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
                 alt="Promotional image for [Show Name]"
-                class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                class="h-48 w-full object-cover shimmer"
               />
             </figure>
 

@@ -1,0 +1,185 @@
+/* ===================================================================
+   styles.css — Custom styles for artist portfolio
+   Complements Tailwind CSS v4 (loaded via CDN).
+   No inline <style> blocks per project convention.
+   =================================================================== */
+
+/* ===================================================================
+   1. DESIGN TOKENS (CSS Custom Properties)
+   Edit these values to customize the site theme.
+   =================================================================== */
+:root {
+  /* Brand colors */
+  --color-accent: #d97706;
+  --color-accent-light: #fef3c7;
+  --color-accent-dark: #92400e;
+
+  /* Surfaces */
+  --color-bg-warm: #fafaf9;
+  --color-bg-card: #ffffff;
+  --color-border-subtle: #e7e5e4;
+
+  /* Typography */
+  --font-heading: 'Georgia', 'Times New Roman', serif;
+  --font-body: system-ui, -apple-system, sans-serif;
+
+  /* Spacing */
+  --section-padding-y: 6rem;
+  --card-gap: 2rem;
+
+  /* Transitions */
+  --transition-smooth: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/* ===================================================================
+   2. SMOOTH SCROLL & ANCHOR BEHAVIOR
+   Enables smooth-scrolling for anchor links. scroll-padding-top is
+   set to EXACTLY the fixed navbar height (3.75rem = 60px), so an
+   anchor target lands with its top edge right at the bottom edge of
+   the navbar — the section top is visible immediately, not covered
+   by the top bar. The offset must NOT be larger than the navbar,
+   otherwise the gap would expose the bottom of the previous section.
+   If the navbar height changes, update this value to match.
+   =================================================================== */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.75rem;
+}
+
+
+/* ===================================================================
+   3. MASONRY GALLERY GRID
+   Pure-CSS masonry using CSS columns. Good for an artwork gallery.
+   Apply class="gallery-grid" to a container, then direct children
+   become masonry items. No JavaScript needed.
+   =================================================================== */
+.gallery-grid {
+  columns: 3 280px;
+  column-gap: 1.5rem;
+}
+
+.gallery-grid > * {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    columns: 2 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    columns: 1;
+  }
+}
+
+
+/* ===================================================================
+   4. IMAGE HOVER EFFECTS
+   Subtle zoom + brightness on card image hover.
+   Apply class="card-image" to the <img> inside show cards,
+   or class="card-image-wrapper" to its <figure> parent.
+   =================================================================== */
+.card-image-wrapper {
+  overflow: hidden;
+  border-radius: 0.75rem;
+}
+
+.card-image-wrapper img {
+  transition: transform var(--transition-smooth), filter var(--transition-smooth);
+}
+
+.card-image-wrapper:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.05) saturate(1.1);
+}
+
+
+/* ===================================================================
+   5. TIMELINE POLISH
+   Extends the career timeline with a gradient line and
+   hover-glow dots.
+   =================================================================== */
+
+/* Timeline vertical line — fades at top and bottom */
+.timeline::before {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #d6d3d1 8%,
+    #d6d3d1 92%,
+    transparent 100%
+  ) !important;
+}
+
+/* Timeline dot hover glow */
+.timeline-dot {
+  transition: box-shadow var(--transition-smooth);
+}
+
+.timeline-dot:hover {
+  box-shadow: 0 0 0 4px rgba(214, 211, 209, 0.4);
+}
+
+
+/* ===================================================================
+   7. PRINT STYLESHEET
+   Strips navigation, hero, and footer; keeps content sections.
+   =================================================================== */
+@media print {
+  header,
+  footer,
+  #hero {
+    display: none !important;
+  }
+
+  section {
+    min-height: auto !important;
+    padding: 2rem 0 !important;
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 60% !important;
+    page-break-inside: avoid;
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    text-decoration: underline;
+    color: #000;
+  }
+}
+
+
+/* ===================================================================
+   8. SHIMMER PLACEHOLDER ANIMATION
+   A subtle animated skeleton effect for placeholder images.
+   Apply class="shimmer" to any <img> that uses a placeholder URL.
+   =================================================================== */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #e7e5e4 25%,
+    #f5f5f4 50%,
+    #e7e5e4 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-slide 1.5s ease-in-out infinite;
+}
+
+@keyframes shimmer-slide {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
