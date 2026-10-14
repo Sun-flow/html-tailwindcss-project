@@ -4,7 +4,7 @@
 
 ## Executive Summary
 
-The repository has been scaffolded with the 4Geeks HTML Hello template, agent rules, and a project brief (`AGENTS.md`). **No `index.html` exists yet** — the actual portfolio site has not been built. The memory bank itself has just been initialized.
+The repository has been scaffolded with the 4Geeks HTML Hello template, agent rules, and a project brief (`AGENTS.md`). An `index.html` portfolio template has been created with hero, about, career, and shows sections. The memory bank itself has just been initialized.
 
 ## What Works
 
@@ -17,33 +17,32 @@ The repository has been scaffolded with the 4Geeks HTML Hello template, agent ru
 | AGENTS.md brief | ✅ Ready | Defines stack, directives, tone, SEO requirements |
 | VS Code config | ✅ Ready | Prettier on save, Markdown preview association |
 | Memory bank | 🆕 Initialized | All core files created 2026-10-14 |
+| `index.html` portfolio template | ✅ Created | Semantic HTML, Tailwind CSS, SEO meta tags, JSON-LD, 4 full-height sections |
 
 ## What's Missing / Known Gaps
 
 | Gap | Severity | Detail |
 |---|---|---|
-| No `index.html` | 🔴 **Blocking** | The primary portfolio page does not exist yet. `server.py:15-17` returns 404 when `index.html` is missing. This is the next priority. |
+| ~~No `index.html`~~ | ~~🔴 Blocking~~ | **RESOLVED** — `index.html` now exists with hero, about, career, and shows sections. |
+| `assets/content.md` | ✅ Created | Human-readable content sheet extracted from `index.html` placeholders, organized by section |
 | No portfolio artwork assets | 🟡 Should-fix | No image files (other than `rigo-baby.jpeg`, which is the 404 image). An artist portfolio needs actual artwork. |
 | No `styles.css` | 🟢 Optional | Tailwind CDN may suffice, but custom CSS may be needed for custom properties, gallery layout polish, or print styles. |
 | No CI/CD | 🟢 Optional | No GitHub Actions or deployment pipeline. Low priority for early stage. |
 | No tests | 🟢 Optional | Static HTML site; manual visual review is the primary validation method. Could add HTML validation in CI later. |
 
-## Blockers
-
-- 🔴 **No `index.html`** — Until it exists, the site serves a 404 page at root. See `memory-bank/operational-blockers.md` if this becomes a persistent issue.
-
 ## Next Priorities
 
-1. Create `index.html` with semantic HTML, Tailwind CSS, and SEO meta tags per `AGENTS.md` directives.
-2. Add artwork image assets (placeholder or real).
-3. Create optional `styles.css` for custom properties and gallery-specific styling.
-4. Validate responsiveness, accessibility, and Lighthouse scores.
+1. Replace placeholder images with real artwork assets in `assets/` directory.
+2. Create `styles.css` for custom properties (colors, spacing, breakpoints) and gallery-specific polish.
+3. Validate responsiveness, accessibility, and Lighthouse scores.
+4. Fill in artist-specific content (name, bio, career entries, shows).
 5. Consider CI (GitHub Pages deployment).
 
 ## Recent Activity
 
 | Date | Change |
 |---|---|
+| 2026-10-14 | `index.html` created — portfolio template with hero, about, career, shows sections |
 | 2026-10-14 | Memory bank initialized |
 | 2026-10-14 | `7f63dd8` — chore: initial agent-oriented development setup (added `.agents/`, `AGENTS.md`) |
 | 2026-10-13 | `c2914d1` — Initial commit (template scaffold) |

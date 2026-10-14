@@ -46,7 +46,7 @@ An **artist portfolio website** — a polished, production-ready static site bui
 
 | File | Description |
 |---|---|
-| `index.html` | Main portfolio page — the primary entry point (not yet created, see `current-status.md`) |
+| `index.html` | Main portfolio page — the primary entry point. Contains hero, about, career, and shows sections. |
 | `server.py` | Flask dev server; serves static files, falls back to 404 page; port 3000 |
 | `AGENTS.md` | Project brief for AI agents; references `.agents/rules/` |
 | `.agents/rules/semantic-html.md` | Agent rule: semantic elements over divs |
@@ -69,7 +69,7 @@ Flask dev server (server.py :3000)
 Static File Responder
     ├── index.html          ← main page (semantic HTML + Tailwind classes)
     ├── styles.css          ← (optional) custom CSS supplementing Tailwind
-    └── assets/             ← images, icons, any static assets
+    └── assets/             ← images, icons, content.md (content source), any static assets
 ```
 
 The Flask server runs in debug mode with caching disabled. It serves `index.html` at `/` and falls back to a 404 page with the `rigo-baby.jpeg` image when a file is missing. If `app.py` exists, it runs that as a render script instead.

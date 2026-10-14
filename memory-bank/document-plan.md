@@ -28,6 +28,7 @@ This is the **index/hub file** for the memory bank. Every file in `memory-bank/`
 | `README.es.md` | Human-facing readme (Spanish) |
 | `learn.json` | Template metadata for 4Geeks Academy |
 | `memory-bank-generator-prompt.md` | The prompt used to generate this memory bank — an init instruction for AI agents |
+| `assets/content.md` | Human-readable content source: all placeholder text extracted from `index.html` by section, for editing and autopopulation |
 
 ## Agent Configuration
 

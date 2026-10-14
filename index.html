@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       PAGE TITLE — Change this to the artist's name
+       ============================================================ -->
+  <title>[Artist Name] — Portfolio</title>
+
+  <!-- ============================================================
+       SEO & DESCRIPTION
+       Update `content` to describe the artist and their work.
+       ============================================================ -->
+  <meta name="description" content="Portfolio of [Artist Name], a [medium/art form] artist based in [location]. Explore a curated collection of works, exhibition history, and upcoming shows." />
+  <meta name="keywords" content="artist, portfolio, [medium], [artist name], contemporary art" />
+  <meta name="author" content="[Artist Name]" />
+
+  <!-- ============================================================
+       OPEN GRAPH — For social sharing previews
+       Replace og:image with a link to a representative artwork.
+       ============================================================ -->
+  <meta property="og:title" content="[Artist Name] — Portfolio" />
+  <meta property="og:description" content="Portfolio of [Artist Name], a [medium/art form] artist based in [location]." />
+  <meta property="og:image" content="[https://example.com/path/to/representative-artwork.jpg]" />
+  <meta property="og:url" content="[https://example.com]" />
+  <meta property="og:type" content="website" />
+
+  <!-- ============================================================
+       TWITTER CARD
+       ============================================================ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="[Artist Name] — Portfolio" />
+  <meta name="twitter:description" content="Portfolio of [Artist Name], a [medium/art form] artist based in [location]." />
+  <meta name="twitter:image" content="[https://example.com/path/to/representative-artwork.jpg]" />
+
+  <!-- ============================================================
+       TAILWIND CSS v4 — via CDN (no build step)
+       ============================================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- ============================================================
+       CUSTOM STYLESHEET — optional: for custom properties, gallery
+       polish, print styles. Create styles.css if needed.
+       ============================================================ -->
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+
+  <!-- ============================================================
+       JSON-LD STRUCTURED DATA
+       Update with the artist's actual details.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "[Artist Name]",
+    "description": "[Brief artist description, e.g. Contemporary painter exploring light and shadow]",
+    "url": "[https://example.com]",
+    "image": "[https://example.com/path/to/artist-photo.jpg]",
+    "sameAs": [
+      "[https://instagram.com/handle]",
+      "[https://artstation.com/handle]"
+    ],
+    "jobTitle": "Visual Artist",
+    "knowsAbout": "[e.g. Oil painting, mixed media, sculpture]"
+  }
+  </script>
+
+  <!-- ============================================================
+       Inline style block is NOT used per layout convention.
+       All styling is via Tailwind utility classes in markup
+       and/or the linked styles.css file.
+       ============================================================ -->
+</head>
+
+<body class="bg-stone-50 text-stone-800 antialiased">
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+       Sticky top navigation with smooth-scroll anchor links.
+       Update the nav links if section IDs change.
+       ============================================================ -->
+  <header class="fixed top-0 left-0 z-50 w-full bg-white/90 backdrop-blur-sm shadow-sm" role="banner">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4" aria-label="Main navigation">
+
+      <!-- Site title — links to top of page -->
+      <a href="#hero" class="text-lg font-semibold tracking-tight text-stone-800 hover:text-stone-600 transition-colors">
+        [Artist Name]
+      </a>
+
+      <!-- Nav links — update href values if you rename section IDs -->
+      <ul class="flex items-center gap-8">
+        <li>
+          <a href="#about" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors">
+            About Me
+          </a>
+        </li>
+        <li>
+          <a href="#career" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors">
+            Career
+          </a>
+        </li>
+        <li>
+          <a href="#shows" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors">
+            Upcoming Shows
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+       ============================================================ -->
+  <main>
+
+    <!-- ============================================================
+         HERO SECTION
+         Full viewport height. Replace background and text placeholders.
+         ============================================================ -->
+    <section id="hero" class="flex min-h-screen items-center justify-center bg-stone-100 px-6 pt-16">
+      <div class="max-w-3xl text-center">
+
+        <!-- Hero image — decorative background artwork or artist photo.
+             Replace src and alt text. To hide, add `hidden` class. -->
+        <figure class="mb-8">
+          <img
+            src="https://via.placeholder.com/200x200/e7e5e4/44403c?text=Photo"
+            alt="[Artist Name] — portrait or representative artwork"
+            class="mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
+          />
+        </figure>
+
+        <!-- Headline — exactly one <h1> per page -->
+        <h1 class="text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl lg:text-6xl">
+          [Artist Name]
+        </h1>
+
+        <!-- Tagline / medium descriptor -->
+        <p class="mt-4 text-lg text-stone-600 sm:text-xl">
+          [Medium/Art Form] Artist · [Location]
+        </p>
+
+        <!-- Brief introductory blurb -->
+        <p class="mt-6 text-base leading-relaxed text-stone-500 max-w-2xl mx-auto">
+          [Short artist statement — one or two sentences about the artist's
+          work, philosophy, or what inspires them. E.g. "A contemporary
+          painter exploring the interplay of light, memory, and texture
+          through oil on canvas."]
+        </p>
+
+        <!-- Scroll-down hint — decorative, links to first section -->
+        <a href="#about" class="mt-10 inline-block text-sm text-stone-400 hover:text-stone-600 transition-colors" aria-label="Scroll to About Me section">
+          ↓ Explore
+        </a>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT ME SECTION
+         Full height. Replace placeholder text with the artist's bio.
+         Add or remove <p> tags as needed.
+         ============================================================ -->
+    <section id="about" class="flex min-h-screen items-center bg-white px-6">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+
+        <!-- Image column — replace src and alt -->
+        <figure class="order-2 md:order-1">
+          <img
+            src="https://via.placeholder.com/600x700/e7e5e4/44403c?text=Artist+Image"
+            alt="[Artist Name] in their studio or a detail of their work"
+            class="h-auto w-full rounded-2xl object-cover shadow-lg"
+          />
+          <figcaption class="mt-2 text-sm text-stone-400 text-center">
+            [Optional caption for the image]
+          </figcaption>
+        </figure>
+
+        <!-- Text column -->
+        <article class="order-1 md:order-2">
+          <h2 class="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
+            About Me
+          </h2>
+          <div class="mt-6 space-y-4 text-base leading-relaxed text-stone-600">
+
+            <!-- ====================================================
+                 ABOUT ME CONTENT — Edit the paragraphs below.
+                 Add or remove <p> blocks as needed.
+                 ==================================================== -->
+            <p>
+              [Paragraph 1: Introduction. Who is the artist? Where are they
+              based? What is their background? E.g. "I am a [medium] artist
+              based in [city], with a decade of experience exploring themes
+              of identity, nature, and transformation through my work."]
+            </p>
+
+            <p>
+              [Paragraph 2: Artistic journey. How did they start? What
+              influences them? E.g. "My practice began during my studies at
+              [school/institution], where I first experimented with
+              [medium/technique]. Since then, my work has evolved to
+              incorporate [materials/themes]."]
+            </p>
+
+            <p>
+              [Paragraph 3: Philosophy or process. What drives their
+              creativity? E.g. "I believe in the power of art to
+              communicate beyond language. Each piece is a dialogue between
+              material and meaning, inviting the viewer to pause and
+              reflect."]
+            </p>
+
+            <!-- ====================================================
+                 End of editable About Me content
+                 ==================================================== -->
+
+          </div>
+
+          <!-- Optional: social or contact link -->
+          <a href="mailto:[email@example.com]" class="mt-6 inline-block text-sm font-medium text-stone-700 underline underline-offset-4 hover:text-stone-900 transition-colors">
+            [email@example.com]
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CAREER SECTION
+         Full height. Timeline-style layout for career milestones.
+         Each milestone is an <article> — duplicate as needed.
+         ============================================================ -->
+    <section id="career" class="flex min-h-screen items-center bg-stone-100 px-6">
+      <div class="mx-auto max-w-4xl">
+        <h2 class="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
+          Career
+        </h2>
+        <p class="mt-2 text-stone-500">
+          [Exhibitions, residencies, awards, and notable milestones]
+        </p>
+
+        <!-- Timeline container -->
+        <div class="relative mt-12 space-y-12 before:absolute before:left-4 before:top-0 before:h-full before:w-0.5 before:bg-stone-300 md:before:left-1/2 md:before:-translate-x-px">
+
+          <!-- =====================================================
+               CAREER ENTRY — Duplicate this <article> block for each
+               milestone. Update year, title, description, and tags.
+               ===================================================== -->
+          <article class="relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
+            <!-- Timeline dot -->
+            <span class="absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:left-auto md:even:left-2 md:odd:right-2" aria-hidden="true"></span>
+
+            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2026</time>
+            <h3 class="mt-1 text-xl font-semibold text-stone-800">
+              [Exhibition / Milestone Title]
+            </h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              [Description of the exhibition, residency, award, or career
+              milestone. E.g. "Solo exhibition at [Gallery Name], featuring
+              12 new works exploring [theme]."]
+            </p>
+            <!-- Optional tags -->
+            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Tags for this milestone">
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Solo Exhibition</li>
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">[City]</li>
+            </ul>
+          </article>
+
+          <!-- Example second entry — ready to be filled in -->
+          <article class="relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
+            <span class="absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:left-auto md:even:left-2 md:odd:right-2" aria-hidden="true"></span>
+
+            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2025</time>
+            <h3 class="mt-1 text-xl font-semibold text-stone-800">
+              [Award / Residency Title]
+            </h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              [Description. E.g. "Recipient of the [Award Name] for
+              emerging artists. Two-month residency at [Location] resulted
+              in a new body of work titled [Series Name]."]
+            </p>
+            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Tags for this milestone">
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Award</li>
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Residency</li>
+            </ul>
+          </article>
+
+          <!-- Example third entry -->
+          <article class="relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
+            <span class="absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:left-auto md:even:left-2 md:odd:right-2" aria-hidden="true"></span>
+
+            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2023</time>
+            <h3 class="mt-1 text-xl font-semibold text-stone-800">
+              [Group Exhibition Title]
+            </h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              [Description. E.g. "Participated in [Group Show Name] at
+              [Venue], a juried exhibition featuring [number] artists from
+              around the world."]
+            </p>
+            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Tags for this milestone">
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Group Exhibition</li>
+            </ul>
+          </article>
+
+          <!-- =====================================================
+               End of career entries. Duplicate the <article> block
+               above for additional milestones.
+               ===================================================== -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         UPCOMING SHOWS SECTION
+         Full height. Card grid for upcoming events.
+         Each show is an <article> — duplicate as needed.
+         ============================================================ -->
+    <section id="shows" class="flex min-h-screen items-center bg-white px-6">
+      <div class="mx-auto max-w-6xl">
+        <h2 class="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
+          Upcoming Shows
+        </h2>
+        <p class="mt-2 text-stone-500">
+          Exhibitions, open studios, and events — past and upcoming.
+        </p>
+
+        <!-- Show cards grid — add/remove <article> blocks as needed -->
+        <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+
+          <!-- =====================================================
+               SHOW CARD — Duplicate this <article> block for each
+               show/event. Fill in the placeholders.
+               ===================================================== -->
+          <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+            <!-- Event image — replace src and alt. Remove <figure> if no image. -->
+            <figure class="mb-4 overflow-hidden rounded-xl">
+              <img
+                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
+                alt="Promotional image for [Show Name]"
+                class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </figure>
+
+            <time class="text-xs font-semibold uppercase tracking-widest text-amber-600">
+              [Month DD, YYYY]
+            </time>
+            <h3 class="mt-2 text-lg font-semibold text-stone-800">
+              [Show / Exhibition Title]
+            </h3>
+            <p class="mt-1 text-sm text-stone-500">
+              [Venue Name] · [City, Country]
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              [Short description of the show, theme, or what will be
+              displayed. E.g. "A solo presentation of new works on paper
+              exploring urban landscapes."]
+            </p>
+            <!-- Optional details list -->
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs text-stone-400">
+              <li class="flex items-center gap-1">
+                <span aria-hidden="true">📅</span> [Dates: e.g. Mar 5–Apr 15]
+              </li>
+              <li class="flex items-center gap-1">
+                <span aria-hidden="true">📍</span> [Opening Reception: Mar 5, 6-9pm]
+              </li>
+            </ul>
+          </article>
+
+          <!-- Second show card — ready to be filled -->
+          <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+            <figure class="mb-4 overflow-hidden rounded-xl">
+              <img
+                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
+                alt="Promotional image for [Show Name]"
+                class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </figure>
+
+            <time class="text-xs font-semibold uppercase tracking-widest text-amber-600">
+              [Month DD, YYYY]
+            </time>
+            <h3 class="mt-2 text-lg font-semibold text-stone-800">
+              [Show / Exhibition Title]
+            </h3>
+            <p class="mt-1 text-sm text-stone-500">
+              [Venue Name] · [City, Country]
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              [Short description. E.g. "Group exhibition featuring
+              [number] artists responding to the theme of [theme]."]
+            </p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs text-stone-400">
+              <li class="flex items-center gap-1">
+                <span aria-hidden="true">📅</span> [Dates]
+              </li>
+              <li class="flex items-center gap-1">
+                <span aria-hidden="true">📍</span> [Location details]
+              </li>
+            </ul>
+          </article>
+
+          <!-- Third show card — ready to be filled -->
+          <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
+            <figure class="mb-4 overflow-hidden rounded-xl">
+              <img
+                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
+                alt="Promotional image for [Show Name]"
+                class="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </figure>
+
+            <time class="text-xs font-semibold uppercase tracking-widest text-amber-600">
+              [Month DD, YYYY]
+            </time>
+            <h3 class="mt-2 text-lg font-semibold text-stone-800">
+              [Show / Exhibition Title]
+            </h3>
+            <p class="mt-1 text-sm text-stone-500">
+              [Venue Name] · [City, Country]
+            </p>
+            <p class="mt-3 text-sm leading-relaxed text-stone-600">
+              [Short description. E.g. "Open studio event — come see
+              works in progress and new completed pieces."]
+            </p>
+            <ul class="mt-4 flex flex-wrap gap-2 text-xs text-stone-400">
+              <li class="flex items-center gap-1">
+                <span aria-hidden="true">📅</span> [Dates]
+              </li>
+              <li class="flex items-center gap-1">
+                <span aria-hidden="true">📍</span> [Location details]
+              </li>
+            </ul>
+          </article>
+
+          <!-- =====================================================
+               End of show cards. Duplicate the <article> block above
+               for additional events.
+               ===================================================== -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       Update social links and copyright.
+       ============================================================ -->
+  <footer class="border-t border-stone-200 bg-stone-50 px-6 py-8" role="contentinfo">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 text-center sm:flex-row sm:text-left">
+
+      <!-- Copyright -->
+      <p class="text-sm text-stone-400">
+        &copy; 2026 [Artist Name]. All rights reserved.
+      </p>
+
+      <!-- Social / contact links — update href values -->
+      <nav aria-label="Social media and contact links">
+        <ul class="flex gap-6 text-sm text-stone-500">
+          <li>
+            <a href="[https://instagram.com/handle]" class="hover:text-stone-800 transition-colors" target="_blank" rel="noopener noreferrer">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="mailto:[email@example.com]" class="hover:text-stone-800 transition-colors">
+              Email
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

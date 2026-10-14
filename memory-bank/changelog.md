@@ -11,6 +11,7 @@ All notable changes to this project's documentation and codebase.
 
 ### Added
 
+- `index.html` — portfolio template page with hero, about me, career timeline, and upcoming shows sections — 2026-10-14
 - Memory bank initialized with core files: `project-overview.md`, `tech-stack.md`, `current-status.md`, `document-plan.md`, `changelog.md`, `conventions.md`, `archive/` — 2026-10-14
 - `memory-bank-generator-prompt.md` added to repo root — 2026-10-14
 
