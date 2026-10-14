@@ -1,5 +1,12 @@
 # AGENTS.md — Project Brief
 
+## Mandatory: Read the Memory Bank First
+
+**Before doing any work in this repository, read EVERY file in `memory-bank/`.**  
+Your memory resets between sessions; the memory bank is your only persistent link to prior work.
+
+Start with `memory-bank/document-plan.md` → `memory-bank/project-overview.md` → `memory-bank/current-status.md` → `memory-bank/changelog.md` for a ten-second orientation.
+
 ## Overview
 
 This is a **portfolio website** for an **artist** to showcase their work.  
@@ -11,11 +18,12 @@ Treat this as a professional client engagement — the site must be polished, pe
 
 ### 1. Follow Agent Rules
 
-All code must comply with the rules in `.agents/rules/`:
+All code must comply with the rules in `memory-bank/` and `.agents/rules/`:
 
-- **`semantic-html.md`** — Use proper semantic tags, never div-only structure.
-- **`layout.md`** — Separate CSS file, Flexbox layout, no floats/inline-block for structure.
-- **`accessibility.md`** — ARIA labels, roles, alt text, keyboard navigation.
+- **`memory-bank/conventions.md`** — Architecture, naming, and invariant conventions.
+- **`.agents/rules/semantic-html.md`** — Use proper semantic tags, never div-only structure.
+- **`.agents/rules/layout.md`** — Separate CSS file, Flexbox layout, no floats/inline-block for structure.
+- **`.agents/rules/accessibility.md`** — ARIA labels, roles, alt text, keyboard navigation.
 
 ### 2. SEO & GEO Optimization
 
