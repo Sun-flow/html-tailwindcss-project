@@ -17,6 +17,7 @@ This is the **index/hub file** for the memory bank. Every file in `memory-bank/`
 | `review-edits/fact-checker-review.md` | Fact-checker validation: verified all quantitative claims against live repo | 2026-10-14 |
 | `review-edits/consistency-checker-review.md` | Consistency-checker validation: cross-file agreement and freshness | 2026-10-14 |
 | `archive/` | Superseded content — archive, don't delete | 2026-10-14 |
+| `pagespeed/error-exploration.md` | PSI diagnosis: doctype & meta description flags are a GitHub Codespaces interstitial artifact, not an `index.html` defect | 2026-10-15 |
 
 ## Root Documentation
 
