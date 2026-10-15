@@ -5,25 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- ============================================================
-       PAGE TITLE — Change this to the artist's name
+       PAGE TITLE — gromb, jazz dance instructor
        ============================================================ -->
-  <title>[Artist Name] — Portfolio</title>
+  <title>gromb — Jazz Dance Instructor</title>
 
   <!-- ============================================================
        SEO & DESCRIPTION
-       Update `content` to describe the artist and their work.
+       Describes gromb as a jazz dance instructor (Blues & Balboa).
        ============================================================ -->
-  <meta name="description" content="Portfolio of [Artist Name], a [medium/art form] artist based in [location]. Explore a curated collection of works, exhibition history, and upcoming shows." />
-  <meta name="keywords" content="artist, portfolio, [medium], [artist name], contemporary art" />
-  <meta name="author" content="[Artist Name]" />
+  <meta name="description" content="Website of gromb, a San Francisco Jazz dance instructor specializing in Blues and Balboa. Explore their dance lineage, teaching, and upcoming events." />
+  <meta name="keywords" content="dance, jazz dance, lindy hop, blues, balboa, swing dance, instructor, San Francisco, Bay Area, workshops, events" />
+  <meta name="author" content="gromb" />
 
   <!-- ============================================================
        OPEN GRAPH — For social sharing previews
-       Replace og:image with a link to a representative artwork.
+       Replace og:image with a link to a representative photo.
        ============================================================ -->
-  <meta property="og:title" content="[Artist Name] — Portfolio" />
-  <meta property="og:description" content="Portfolio of [Artist Name], a [medium/art form] artist based in [location]." />
-  <meta property="og:image" content="[https://example.com/path/to/representative-artwork.jpg]" />
+  <meta property="og:title" content="gromb — Jazz Dance Instructor" />
+  <meta property="og:description" content="San Francisco Jazz dance instructor specializing in Blues and Balboa. Dance lineage, teaching, and events." />
+  <meta property="og:image" content="[https://example.com/path/to/representative-photo.jpg]" />
   <meta property="og:url" content="[https://example.com]" />
   <meta property="og:type" content="website" />
 
@@ -31,9 +31,9 @@
        TWITTER CARD
        ============================================================ -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="[Artist Name] — Portfolio" />
-  <meta name="twitter:description" content="Portfolio of [Artist Name], a [medium/art form] artist based in [location]." />
-  <meta name="twitter:image" content="[https://example.com/path/to/representative-artwork.jpg]" />
+  <meta name="twitter:title" content="gromb — Jazz Dance Instructor" />
+  <meta name="twitter:description" content="San Francisco Jazz dance instructor specializing in Blues and Balboa. Dance lineage, teaching, and events." />
+  <meta name="twitter:image" content="[https://example.com/path/to/representative-photo.jpg]" />
 
   <!-- ============================================================
        TAILWIND CSS v4 — via CDN (no build step)
@@ -41,29 +41,28 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   <!-- ============================================================
-       CUSTOM STYLESHEET — optional: for custom properties, gallery
+      CUSTOM STYLESHEET — optional: for custom properties, card/image
        polish, print styles. Create styles.css if needed.
        ============================================================ -->
   <link rel="stylesheet" type="text/css" href="styles.css" />
 
   <!-- ============================================================
        JSON-LD STRUCTURED DATA
-       Update with the artist's actual details.
+       Update with the instructor's actual details.
        ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "[Artist Name]",
-    "description": "[Brief artist description, e.g. Contemporary painter exploring light and shadow]",
+    "name": "gromb",
+    "description": "San Francisco Jazz dance instructor specializing in Blues and Balboa",
     "url": "[https://example.com]",
-    "image": "[https://example.com/path/to/artist-photo.jpg]",
+    "image": "[https://example.com/path/to/profile-photo.jpg]",
     "sameAs": [
-      "[https://instagram.com/handle]",
-      "[https://artstation.com/handle]"
+      "[https://instagram.com/handle]"
     ],
-    "jobTitle": "Visual Artist",
-    "knowsAbout": "[e.g. Oil painting, mixed media, sculpture]"
+    "jobTitle": "Dance Instructor",
+    "knowsAbout": "Jazz dance, Blues, Balboa, Lindy Hop, swing dance"
   }
   </script>
 
@@ -86,7 +85,7 @@
 
       <!-- Site title — links to top of page -->
       <a href="#hero" class="text-lg font-semibold tracking-tight text-stone-800 hover:text-stone-600 transition-colors">
-        [Artist Name]
+        gromb
       </a>
 
       <!-- Nav links — update href values if you rename section IDs -->
@@ -98,12 +97,12 @@
         </li>
         <li>
           <a href="#career" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors">
-            Career
+            Dance Lineage
           </a>
         </li>
         <li>
-          <a href="#shows" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors">
-            Upcoming Shows
+          <a href="#events" class="text-sm font-medium text-stone-600 hover:text-stone-900 transition-colors">
+            Upcoming Events
           </a>
         </li>
       </ul>
@@ -122,32 +121,31 @@
     <section id="hero" class="flex min-h-screen items-center justify-center bg-stone-100 px-6 pt-16">
       <div class="max-w-3xl text-center">
 
-        <!-- Hero image — decorative background artwork or artist photo.
+        <!-- Hero image — photo of Gromb teaching or dancing.
              Replace src and alt text. To hide, add `hidden` class. -->
         <figure class="mb-8">
           <img
             src="https://via.placeholder.com/200x200/e7e5e4/44403c?text=Photo"
-            alt="[Artist Name] — portrait or representative artwork"
+            alt="gromb — portrait or dancing"
             class="shimmer mx-auto h-40 w-40 rounded-full object-cover shadow-lg"
           />
         </figure>
 
         <!-- Headline — exactly one <h1> per page -->
         <h1 class="text-4xl font-bold tracking-tight text-stone-900 sm:text-5xl lg:text-6xl">
-          [Artist Name]
+          gromb
         </h1>
 
-        <!-- Tagline / medium descriptor -->
+        <!-- Tagline / role descriptor -->
         <p class="mt-4 text-lg text-stone-600 sm:text-xl">
-          [Medium/Art Form] Artist · [Location]
+          Jazz Dance Instructor · San Francisco
         </p>
 
         <!-- Brief introductory blurb -->
         <p class="mt-6 text-base leading-relaxed text-stone-500 max-w-2xl mx-auto">
-          [Short artist statement — one or two sentences about the artist's
-          work, philosophy, or what inspires them. E.g. "A contemporary
-          painter exploring the interplay of light, memory, and texture
-          through oil on canvas."]
+          A jazz dance instructor specializing in teaching Blues and Balboa.
+          [Short statement — one or two sentences about teaching, musicality,
+          and the joy of social dance.]
         </p>
 
         <!-- Scroll-down hint — decorative, links to first section -->
@@ -159,7 +157,7 @@
 
     <!-- ============================================================
          ABOUT ME SECTION
-         Full height. Replace placeholder text with the artist's bio.
+         Full height. Bio text from assets/gromb-bio.md.
          Add or remove <p> tags as needed.
          ============================================================ -->
     <section id="about" class="flex min-h-screen items-center bg-white px-6 pt-2 pb-6">
@@ -168,12 +166,12 @@
         <!-- Image column — replace src and alt -->
         <figure class="order-2 md:order-1 card-image-wrapper">
           <img
-            src="https://via.placeholder.com/600x700/e7e5e4/44403c?text=Artist+Image"
-            alt="[Artist Name] in their studio or a detail of their work"
+            src="https://via.placeholder.com/600x700/e7e5e4/44403c?text=Instructor+Image"
+            alt="gromb teaching a dance class or social dancing"
             class="h-auto w-full rounded-2xl object-cover shadow-lg shimmer"
           />
           <figcaption class="mt-2 text-sm text-stone-400 text-center">
-            [Optional caption for the image]
+            [Optional caption — e.g. at a workshop or social]
           </figcaption>
         </figure>
 
@@ -189,26 +187,28 @@
                  Add or remove <p> blocks as needed.
                  ==================================================== -->
             <p>
-              [Paragraph 1: Introduction. Who is the artist? Where are they
-              based? What is their background? E.g. "I am a [medium] artist
-              based in [city], with a decade of experience exploring themes
-              of identity, nature, and transformation through my work."]
+              I'm gromb, a jazz dance instructor based in San Francisco. I
+              teach Blues and Balboa — two partner dances born from the jazz
+              and swing era — and I love meeting dancers wherever the music
+              takes us: classes, social floors, weekend events, and
+              festivals.
             </p>
 
             <p>
-              [Paragraph 2: Artistic journey. How did they start? What
-              influences them? E.g. "My practice began during my studies at
-              [school/institution], where I first experimented with
-              [medium/technique]. Since then, my work has evolved to
-              incorporate [materials/themes]."]
+              My dance journey began with Lindy Hop in 2016, moved onto the
+              Blues floor in 2018, and welcomed Balboa in 2022. Each style
+              taught me something new about connection, rhythm, and
+              listening — and it didn't take long before sharing that with
+              students became the best part of the path (see the Dance
+              Lineage section for the full timeline).
             </p>
 
             <p>
-              [Paragraph 3: Philosophy or process. What drives their
-              creativity? E.g. "I believe in the power of art to
-              communicate beyond language. Each piece is a dialogue between
-              material and meaning, inviting the viewer to pause and
-              reflect."]
+              I believe great social dance is a conversation. My classes
+              focus on clear connection, musicality, and — above all —
+              having fun on the dance floor. Whether you're brand new or
+              deep in your dance journey, my goal is to make every lesson a
+              place where you feel welcome to grow.
             </p>
 
             <!-- ====================================================
@@ -226,86 +226,120 @@
     </section>
 
     <!-- ============================================================
-         CAREER SECTION
-         Full height. Timeline-style layout for career milestones.
+         DANCE LINEAGE SECTION (was: Career)
+         Full height. Timeline of dance styles and where they were
+         learned (Home Scenes) plus accolades (tag pills).
          Each milestone is an <article> — duplicate as needed.
          ============================================================ -->
     <section id="career" class="flex min-h-screen items-center bg-stone-100 px-6 py-6">
       <div class="mx-auto max-w-4xl">
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
-          Career
+          Dance Lineage
         </h2>
         <p class="mt-2 text-stone-500">
-          [Exhibitions, residencies, awards, and notable milestones]
+          The styles that shaped me — when I started, my home scenes, and accolades along the way.
         </p>
 
         <!-- Timeline container -->
         <div class="timeline relative mt-12 space-y-12 before:absolute before:left-4 before:top-0 before:h-full before:w-0.5 before:bg-stone-300 md:before:left-1/2 md:before:-translate-x-px">
 
           <!-- =====================================================
-               CAREER ENTRY — Duplicate this <article> block for each
-               milestone. Update year, title, description, and tags.
+               LINEAGE ENTRY — Duplicate this <article> block for each
+               milestone. Update year, title, description, Home Scenes,
+               and accolade tags.
                ===================================================== -->
           <article class="group relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
             <!-- Timeline dot -->
             <span class="timeline-dot absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:group-odd:left-auto md:group-odd:right-0 md:group-odd:translate-x-1/2 md:group-even:left-0 md:group-even:-translate-x-1/2" aria-hidden="true"></span>
 
-            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2026</time>
+            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2016</time>
             <h3 class="mt-1 text-xl font-semibold text-stone-800">
-              [Exhibition / Milestone Title]
+              Lindy Hop
             </h3>
             <p class="mt-2 text-sm leading-relaxed text-stone-600">
-              [Description of the exhibition, residency, award, or career
-              milestone. E.g. "Solo exhibition at [Gallery Name], featuring
-              12 new works exploring [theme]."]
+              [Where the journey began — first social dance floor, first
+              class, first festival. One or two sentences.]
             </p>
-            <!-- Optional tags -->
-            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Tags for this milestone">
-              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Solo Exhibition</li>
-              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">[City]</li>
-            </ul>
-          </article>
 
-          <!-- Example second entry — ready to be filled in -->
-          <article class="group relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
-            <span class="timeline-dot absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:group-odd:left-auto md:group-odd:right-0 md:group-odd:translate-x-1/2 md:group-even:left-0 md:group-even:-translate-x-1/2" aria-hidden="true"></span>
+            <!-- Home Scenes → places where this style was learned -->
+            <div class="mt-3">
+              <h4 class="text-xs font-semibold uppercase tracking-widest text-stone-400">Home Scenes</h4>
+              <ul class="mt-1 flex flex-wrap gap-2 md:justify-end" aria-label="Home scenes for this milestone">
+                <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Oakland</li>
+                <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">SF</li>
+              </ul>
+            </div>
 
-            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2025</time>
-            <h3 class="mt-1 text-xl font-semibold text-stone-800">
-              [Award / Residency Title]
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-stone-600">
-              [Description. E.g. "Recipient of the [Award Name] for
-              emerging artists. Two-month residency at [Location] resulted
-              in a new body of work titled [Series Name]."]
-            </p>
-            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Tags for this milestone">
-              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Award</li>
-              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Residency</li>
-            </ul>
-          </article>
-
-          <!-- Example third entry -->
-          <article class="group relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
-            <span class="timeline-dot absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:group-odd:left-auto md:group-odd:right-0 md:group-odd:translate-x-1/2 md:group-even:left-0 md:group-even:-translate-x-1/2" aria-hidden="true"></span>
-
-            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2023</time>
-            <h3 class="mt-1 text-xl font-semibold text-stone-800">
-              [Group Exhibition Title]
-            </h3>
-            <p class="mt-2 text-sm leading-relaxed text-stone-600">
-              [Description. E.g. "Participated in [Group Show Name] at
-              [Venue], a juried exhibition featuring [number] artists from
-              around the world."]
-            </p>
-            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Tags for this milestone">
-              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Group Exhibition</li>
+            <!-- Accolades / achievements → tag pills -->
+            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Accolades for this milestone">
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">[Accolade — e.g. First social dance]</li>
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">[Accolade / Achievement]</li>
             </ul>
           </article>
 
           <!-- =====================================================
-               End of career entries. Duplicate the <article> block
-               above for additional milestones.
+               Example second entry — Blues, 2018
+               ===================================================== -->
+          <article class="group relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
+            <span class="timeline-dot absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:group-odd:left-auto md:group-odd:right-0 md:group-odd:translate-x-1/2 md:group-even:left-0 md:group-even:-translate-x-1/2" aria-hidden="true"></span>
+
+            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2018</time>
+            <h3 class="mt-1 text-xl font-semibold text-stone-800">
+              Blues
+            </h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              [How Blues entered the journey — the floor, the community, the
+              teachers who opened the door.]
+            </p>
+
+            <!-- Home Scenes -->
+            <div class="mt-3">
+              <h4 class="text-xs font-semibold uppercase tracking-widest text-stone-400">Home Scenes</h4>
+              <ul class="mt-1 flex flex-wrap gap-2 md:justify-end" aria-label="Home scenes for this milestone">
+                <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">DC</li>
+              </ul>
+            </div>
+
+            <!-- Accolades / achievements -->
+            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Accolades for this milestone">
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">[Accolade — e.g. First Blues weekend workshop]</li>
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">[Accolade / Achievement]</li>
+            </ul>
+          </article>
+
+          <!-- =====================================================
+               Example third entry — Balboa, 2022
+               ===================================================== -->
+          <article class="group relative pl-12 md:w-1/2 md:pl-0 md:even:ml-auto md:even:pl-12 md:odd:pr-12 md:odd:text-right">
+            <span class="timeline-dot absolute left-2 top-1.5 h-4 w-4 rounded-full border-2 border-stone-400 bg-white md:group-odd:left-auto md:group-odd:right-0 md:group-odd:translate-x-1/2 md:group-even:left-0 md:group-even:-translate-x-1/2" aria-hidden="true"></span>
+
+            <time class="text-xs font-semibold uppercase tracking-widest text-stone-400">2022</time>
+            <h3 class="mt-1 text-xl font-semibold text-stone-800">
+              Balboa
+            </h3>
+            <p class="mt-2 text-sm leading-relaxed text-stone-600">
+              [How Balboa joined the mix — the scene, the music, the
+              connection that hooked me.]
+            </p>
+
+            <!-- Home Scenes -->
+            <div class="mt-3">
+              <h4 class="text-xs font-semibold uppercase tracking-widest text-stone-400">Home Scenes</h4>
+              <ul class="mt-1 flex flex-wrap gap-2 md:justify-end" aria-label="Home scenes for this milestone">
+                <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">Triangle NC</li>
+              </ul>
+            </div>
+
+            <!-- Accolades / achievements -->
+            <ul class="mt-3 flex flex-wrap gap-2 md:justify-end" aria-label="Accolades for this milestone">
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">[Accolade — e.g. Started teaching Balboa]</li>
+              <li class="rounded-full bg-stone-200 px-3 py-1 text-xs font-medium text-stone-600">[Accolade / Achievement]</li>
+            </ul>
+          </article>
+
+          <!-- =====================================================
+               End of lineage entries. Duplicate the <article> block
+               above for additional years/milestones.
                ===================================================== -->
 
         </div>
@@ -313,32 +347,32 @@
     </section>
 
     <!-- ============================================================
-         UPCOMING SHOWS SECTION
-         Full height. Card grid for upcoming events.
-         Each show is an <article> — duplicate as needed.
+         UPCOMING EVENTS SECTION
+         Full height. Card grid for upcoming events, workshops, classes.
+         Each event is an <article> — duplicate as needed.
          ============================================================ -->
-    <section id="shows" class="flex min-h-screen items-center bg-white px-6 py-6">
+    <section id="events" class="flex min-h-screen items-center bg-white px-6 py-6">
       <div class="mx-auto max-w-6xl">
         <h2 class="text-3xl font-semibold tracking-tight text-stone-900 sm:text-4xl">
-          Upcoming Shows
+          Upcoming Events
         </h2>
         <p class="mt-2 text-stone-500">
-          Exhibitions, open studios, and events — past and upcoming.
+          Workshops, classes, and social dances — near and far.
         </p>
 
-        <!-- Show cards grid — add/remove <article> blocks as needed -->
+        <!-- Event cards grid — add/remove <article> blocks as needed -->
         <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
           <!-- =====================================================
-               SHOW CARD — Duplicate this <article> block for each
-               show/event. Fill in the placeholders.
+               EVENT CARD — Duplicate this <article> block for each
+               workshop/class/event. Fill in the placeholders.
                ===================================================== -->
           <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
             <!-- Event image — replace src and alt. Remove <figure> if no image. -->
             <figure class="card-image-wrapper mb-4 overflow-hidden rounded-xl">
               <img
-                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
-                alt="Promotional image for [Show Name]"
+                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Event+Flyer"
+                alt="Promotional image for [Event Name]"
                 class="h-48 w-full object-cover shimmer"
               />
             </figure>
@@ -347,15 +381,15 @@
               [Month DD, YYYY]
             </time>
             <h3 class="mt-2 text-lg font-semibold text-stone-800">
-              [Show / Exhibition Title]
+              [Workshop / Class / Event Title]
             </h3>
             <p class="mt-1 text-sm text-stone-500">
-              [Venue Name] · [City, Country]
+              [Venue Name] · [City]  ([level/dance, e.g. Blues & Balboa])
             </p>
             <p class="mt-3 text-sm leading-relaxed text-stone-600">
-              [Short description of the show, theme, or what will be
-              displayed. E.g. "A solo presentation of new works on paper
-              exploring urban landscapes."]
+              [Short description of the workshop or class — what students
+              will work on, who it's for. E.g. "A Blues fundamentals
+              workshop for new and continuing dancers."]
             </p>
             <!-- Optional details list -->
             <ul class="mt-4 flex flex-wrap gap-2 text-xs text-stone-400">
@@ -363,17 +397,17 @@
                 <span aria-hidden="true">📅</span> [Dates: e.g. Mar 5–Apr 15]
               </li>
               <li class="flex items-center gap-1">
-                <span aria-hidden="true">📍</span> [Opening Reception: Mar 5, 6-9pm]
+                <span aria-hidden="true">📍</span> [Venue / Register link]
               </li>
             </ul>
           </article>
 
-          <!-- Second show card — ready to be filled -->
+          <!-- Second event card — ready to be filled -->
           <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
             <figure class="card-image-wrapper mb-4 overflow-hidden rounded-xl">
               <img
-                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
-                alt="Promotional image for [Show Name]"
+                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Event+Flyer"
+                alt="Promotional image for [Event Name]"
                 class="h-48 w-full object-cover shimmer"
               />
             </figure>
@@ -382,31 +416,31 @@
               [Month DD, YYYY]
             </time>
             <h3 class="mt-2 text-lg font-semibold text-stone-800">
-              [Show / Exhibition Title]
+              [Workshop / Class / Event Title]
             </h3>
             <p class="mt-1 text-sm text-stone-500">
-              [Venue Name] · [City, Country]
+              [Venue Name] · [City]
             </p>
             <p class="mt-3 text-sm leading-relaxed text-stone-600">
-              [Short description. E.g. "Group exhibition featuring
-              [number] artists responding to the theme of [theme]."]
+              [Short description. E.g. "A Balboa workshop focused on
+              footwork and rhythm for intermediate dancers."]
             </p>
             <ul class="mt-4 flex flex-wrap gap-2 text-xs text-stone-400">
               <li class="flex items-center gap-1">
                 <span aria-hidden="true">📅</span> [Dates]
               </li>
               <li class="flex items-center gap-1">
-                <span aria-hidden="true">📍</span> [Location details]
+                <span aria-hidden="true">📍</span> [Venue / Register link]
               </li>
             </ul>
           </article>
 
-          <!-- Third show card — ready to be filled -->
+          <!-- Third event card — ready to be filled -->
           <article class="group flex flex-col rounded-2xl border border-stone-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
             <figure class="card-image-wrapper mb-4 overflow-hidden rounded-xl">
               <img
-                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster"
-                alt="Promotional image for [Show Name]"
+                src="https://via.placeholder.com/400x300/e7e5e4/44403c?text=Event+Flyer"
+                alt="Promotional image for [Event Name]"
                 class="h-48 w-full object-cover shimmer"
               />
             </figure>
@@ -415,27 +449,27 @@
               [Month DD, YYYY]
             </time>
             <h3 class="mt-2 text-lg font-semibold text-stone-800">
-              [Show / Exhibition Title]
+              [Workshop / Class / Event Title]
             </h3>
             <p class="mt-1 text-sm text-stone-500">
-              [Venue Name] · [City, Country]
+              [Venue Name] · [City]
             </p>
             <p class="mt-3 text-sm leading-relaxed text-stone-600">
-              [Short description. E.g. "Open studio event — come see
-              works in progress and new completed pieces."]
+              [Short description. E.g. "A weekend social dance event —
+              join us on the floor! Open to all levels."]
             </p>
             <ul class="mt-4 flex flex-wrap gap-2 text-xs text-stone-400">
               <li class="flex items-center gap-1">
                 <span aria-hidden="true">📅</span> [Dates]
               </li>
               <li class="flex items-center gap-1">
-                <span aria-hidden="true">📍</span> [Location details]
+                <span aria-hidden="true">📍</span> [Venue / Register link]
               </li>
             </ul>
           </article>
 
           <!-- =====================================================
-               End of show cards. Duplicate the <article> block above
+               End of event cards. Duplicate the <article> block above
                for additional events.
                ===================================================== -->
 
@@ -454,7 +488,7 @@
 
       <!-- Copyright -->
       <p class="text-sm text-stone-400">
-        &copy; 2026 [Artist Name]. All rights reserved.
+        &copy; 2026 gromb. All rights reserved.
       </p>
 
       <!-- Social / contact links — update href values -->

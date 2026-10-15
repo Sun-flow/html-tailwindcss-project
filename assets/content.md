@@ -1,6 +1,8 @@
-# Portfolio Content
+# Site Content
 
-**Instructions:** Edit the fields below with the artist's real information. Once edited, this file can be used to autopopulate `index.html` by replacing the bracketed placeholder values with the corresponding content from this file.
+**Instructions:** Edit the fields below with gromb's real information. Once edited, this file can be used to autopopulate `index.html` by replacing the bracketed placeholder values with the corresponding content from this file.
+
+**Role:** gromb is a **jazz dance instructor** based in **San Francisco**, specializing in **Blues** and **Balboa**, who works dance **events** (workshops, classes, socials) — not an artist playing shows. Keep all language on-language: instructor/class/event, never "artist/shows/gallery".
 
 ---
 
@@ -8,12 +10,14 @@
 
 | Field | Current Value |
 |---|---|
-| **Artist Name** | `[Artist Name]` |
-| **Medium / Art Form** | `[medium/art form]` |
-| **Location** | `[location]` |
-| **SEO Description** | `Portfolio of [Artist Name], a [medium/art form] artist based in [location]. Explore a curated collection of works, exhibition history, and upcoming shows.` |
-| **SEO Keywords** | `artist, portfolio, [medium], [artist name], contemporary art` |
-| **OG Image (social share preview)** | `[https://example.com/path/to/representative-artwork.jpg]` |
+| **Name** | `gromb` |
+| **Role** | `Jazz Dance Instructor` |
+| **Specialization** | `Blues`, `Balboa` (also: `Lindy Hop`) |
+| **Location** | `San Francisco` |
+| **Pronouns** | `they/them` |
+| **SEO Description** | `Website of gromb, a San Francisco Jazz dance instructor specializing in Blues and Balboa. Explore their dance lineage, teaching, and upcoming events.` |
+| **SEO Keywords** | `dance, jazz dance, lindy hop, blues, balboa, swing dance, instructor, San Francisco, Bay Area, workshops, events` |
+| **OG Image (social share preview)** | `[https://example.com/path/to/representative-photo.jpg]` |
 | **Site URL** | `[https://example.com]` |
 
 ---
@@ -22,13 +26,12 @@
 
 | Field | Current Value |
 |---|---|
-| **Name** | `[Artist Name]` |
-| **Description** | `[Brief artist description, e.g. Contemporary painter exploring light and shadow]` |
+| **Name** | `gromb` |
+| **Description** | `San Francisco Jazz dance instructor specializing in Blues and Balboa` |
 | **URL** | `[https://example.com]` |
-| **Profile Image** | `[https://example.com/path/to/artist-photo.jpg]` |
+| **Profile Image** | `[https://example.com/path/to/profile-photo.jpg]` |
 | **Instagram URL** | `[https://instagram.com/handle]` |
-| **ArtStation / other URL** | `[https://artstation.com/handle]` |
-| **Known For (mediums)** | `[e.g. Oil painting, mixed media, sculpture]` |
+| **Known For (dances)** | `Jazz dance, Blues, Balboa, Lindy Hop, swing dance` |
 
 ---
 
@@ -36,17 +39,18 @@
 
 | Field | Current Value |
 |---|---|
-| **Artist Photo (src)** | `https://via.placeholder.com/200x200/e7e5e4/44403c?text=Photo` |
-| **Photo Alt Text** | `[Artist Name] — portrait or representative artwork` |
-| **Artist Name (h1)** | `[Artist Name]` |
-| **Tagline** | `[Medium/Art Form] Artist · [Location]` |
-| **Short Statement** | `[Short artist statement — one or two sentences about the artist's work, philosophy, or what inspires them. E.g. "A contemporary painter exploring the interplay of light, memory, and texture through oil on canvas."]` |
+| **Photo (src)** | `https://via.placeholder.com/200x200/e7e5e4/44403c?text=Photo` |
+| **Photo Alt Text** | `gromb — portrait or dancing` |
+| **Name (h1)** | `gromb` |
+| **Tagline** | `Jazz Dance Instructor · San Francisco` |
+| **Short Statement** | `A jazz dance instructor specializing in teaching Blues and Balboa. [Short statement — one or two sentences about teaching, musicality, and the joy of social dance.]` |
 
 **Edit your hero statement here:**
 
 ```
-[Artist Name] is a [medium/art form] artist based in [location]. [One or two
-sentences about their work, philosophy, or inspiration.]
+gromb is a San Francisco jazz dance instructor specializing in Blues and
+Balboa. [One or two sentences about their teaching, philosophy, or what
+gets them on the dance floor.]
 ```
 
 ---
@@ -55,136 +59,146 @@ sentences about their work, philosophy, or inspiration.]
 
 | Field | Current Value |
 |---|---|
-| **Image (src)** | `https://via.placeholder.com/600x700/e7e5e4/44403c?text=Artist+Image` |
-| **Image Alt Text** | `[Artist Name] in their studio or a detail of their work` |
-| **Image Caption** | `[Optional caption for the image]` |
-| **Paragraph 1** | `[Paragraph 1: Introduction. Who is the artist? Where are they based? What is their background? E.g. "I am a [medium] artist based in [city], with a decade of experience exploring themes of identity, nature, and transformation through my work."]` |
-| **Paragraph 2** | `[Paragraph 2: Artistic journey. How did they start? What influences them? E.g. "My practice began during my studies at [school/institution], where I first experimented with [medium/technique]. Since then, my work has evolved to incorporate [materials/themes]."]` |
-| **Paragraph 3** | `[Paragraph 3: Philosophy or process. What drives their creativity? E.g. "I believe in the power of art to communicate beyond language. Each piece is a dialogue between material and meaning, inviting the viewer to pause and reflect."]` |
+| **Image (src)** | `https://via.placeholder.com/600x700/e7e5e4/44403c?text=Instructor+Image` |
+| **Image Alt Text** | `gromb teaching a dance class or social dancing` |
+| **Image Caption** | `[Optional caption — e.g. at a workshop or social]` |
+| **Paragraph 1** | `I'm gromb, a jazz dance instructor based in San Francisco. I teach Blues and Balboa — two partner dances born from the jazz and swing era — and I love meeting dancers wherever the music takes us: classes, social floors, weekend events, and festivals.` |
+| **Paragraph 2** | `My dance journey began with Lindy Hop in 2016, moved onto the Blues floor in 2018, and welcomed Balboa in 2022. Each style taught me something new about connection, rhythm, and listening — and it didn't take long before sharing that with students became the best part of the path (see the Dance Lineage section for the full timeline).` |
+| **Paragraph 3** | `I believe great social dance is a conversation. My classes focus on clear connection, musicality, and — above all — having fun on the dance floor. Whether you're brand new or deep in your dance journey, my goal is to make every lesson a place where you feel welcome to grow.` |
 | **Email** | `[email@example.com]` |
 
 **Edit your About Me content here:**
 
 ```
-[Write 1–3 paragraphs about yourself. Include where you're based, your
-background, artistic journey, and creative philosophy. Be authentic and
-personal — this is the heart of the portfolio.]
+[Write 2–3 paragraphs about gromb: where they're based, their dance
+journey (Lindy 2016 → Blues 2018 → Balboa 2022), home scenes (Oakland,
+DC, Triangle NC, SF), and teaching philosophy. Authentic and personal.
+]
 ```
 
 ---
 
-## 5. CAREER SECTION
+## 5. DANCE LINEAGE SECTION (was: CAREER)
 
 ### Section header
 
 | Field | Current Value |
 |---|---|
-| **Section subtitle** | `[Exhibitions, residencies, awards, and notable milestones]` |
+| **Section title** | `Dance Lineage` |
+| **Section subtitle** | `The styles that shaped me — when I started, my home scenes, and accolades along the way.` |
 
-### Career Entry #1
+> Each timeline entry = a **dance style milestone** (not an exhibition). It has a Year, the style learned, a short Description, a **Home Scenes** list (places where the style was learned), and an **Accolades** list of tag pills (achievements/results).
 
-| Field | Current Value |
-|---|---|
-| **Year** | `2026` |
-| **Title** | `[Exhibition / Milestone Title]` |
-| **Description** | `[Description of the exhibition, residency, award, or career milestone. E.g. "Solo exhibition at [Gallery Name], featuring 12 new works exploring [theme]."]` |
-| **Tag 1** | `Solo Exhibition` |
-| **Tag 2** | `[City]` |
-
-### Career Entry #2
+### Lineage Entry #1 — Lindy Hop
 
 | Field | Current Value |
 |---|---|
-| **Year** | `2025` |
-| **Title** | `[Award / Residency Title]` |
-| **Description** | `[Description. E.g. "Recipient of the [Award Name] for emerging artists. Two-month residency at [Location] resulted in a new body of work titled [Series Name]."]` |
-| **Tag 1** | `Award` |
-| **Tag 2** | `Residency` |
+| **Year** | `2016` |
+| **Style** | `Lindy Hop` |
+| **Description** | `[Where the journey began — first social dance floor, first class, first festival. One or two sentences.]` |
+| **Home Scenes** | `Oakland`, `SF` |
+| **Accolade Tag 1** | `[Accolade — e.g. First social dance]` |
+| **Accolade Tag 2** | `[Accolade / Achievement]` |
 
-### Career Entry #3
+### Lineage Entry #2 — Blues
 
 | Field | Current Value |
 |---|---|
-| **Year** | `2023` |
-| **Title** | `[Group Exhibition Title]` |
-| **Description** | `[Description. E.g. "Participated in [Group Show Name] at [Venue], a juried exhibition featuring [number] artists from around the world."]` |
-| **Tag 1** | `Group Exhibition` |
+| **Year** | `2018` |
+| **Style** | `Blues` |
+| **Description** | `[How Blues entered the journey — the floor, the community, the teachers who opened the door.]` |
+| **Home Scenes** | `DC` |
+| **Accolade Tag 1** | `[Accolade — e.g. First Blues weekend workshop]` |
+| **Accolade Tag 2** | `[Accolade / Achievement]` |
 
-**Add more entries here (copy the block below for each new milestone):**
+### Lineage Entry #3 — Balboa
+
+| Field | Current Value |
+|---|---|
+| **Year** | `2022` |
+| **Style** | `Balboa` |
+| **Description** | `[How Balboa joined the mix — the scene, the music, the connection that hooked me.]` |
+| **Home Scenes** | `Triangle NC` |
+| **Accolade Tag 1** | `[Accolade — e.g. Started teaching Balboa]` |
+| **Accolade Tag 2** | `[Accolade / Achievement]` |
+
+**Add more lineage entries here (copy the block below for each new year):**
 
 ```
---- Career Entry #4 ---
+--- Lineage Entry #4 ---
 Year: [YYYY]
-Title: [Milestone Title]
-Description: [Describe the exhibition, award, residency, or achievement.]
-Tags: [Tag1], [Tag2]
+Style: [dance style]
+Description: [How this style entered the journey.]
+Home Scenes: [City / Studio / Community]
+Accolades: [Tag1], [Tag2]
 ```
 
 ---
 
-## 6. UPCOMING SHOWS SECTION
+## 6. UPCOMING EVENTS SECTION (was: UPCOMING SHOWS)
 
 ### Section header
 
 | Field | Current Value |
 |---|---|
-| **Section subtitle** | `Exhibitions, open studios, and events — past and upcoming.` |
+| **Section title** | `Upcoming Events` |
+| **Section subtitle** | `Workshops, classes, and social dances — near and far.` |
 
-### Show Card #1
-
-| Field | Current Value |
-|---|---|
-| **Image (src)** | `https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster` |
-| **Image Alt Text** | `Promotional image for [Show Name]` |
-| **Event Date** | `[Month DD, YYYY]` |
-| **Show Title** | `[Show / Exhibition Title]` |
-| **Venue** | `[Venue Name]` |
-| **City, Country** | `[City, Country]` |
-| **Description** | `[Short description of the show, theme, or what will be displayed. E.g. "A solo presentation of new works on paper exploring urban landscapes."]` |
-| **Date range** | `[Dates: e.g. Mar 5–Apr 15]` |
-| **Opening reception** | `[Opening Reception: Mar 5, 6-9pm]` |
-
-### Show Card #2
+### Event Card #1
 
 | Field | Current Value |
 |---|---|
-| **Image (src)** | `https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster` |
-| **Image Alt Text** | `Promotional image for [Show Name]` |
+| **Image (src)** | `https://via.placeholder.com/400x300/e7e5e4/44403c?text=Event+Flyer` |
+| **Image Alt Text** | `Promotional image for [Event Name]` |
 | **Event Date** | `[Month DD, YYYY]` |
-| **Show Title** | `[Show / Exhibition Title]` |
+| **Event Title** | `[Workshop / Class / Event Title]` |
 | **Venue** | `[Venue Name]` |
-| **City, Country** | `[City, Country]` |
-| **Description** | `[Short description. E.g. "Group exhibition featuring [number] artists responding to the theme of [theme]."]` |
-| **Date range** | `[Dates]` |
-| **Location details** | `[Location details]` |
+| **City + dance** | `[City]` · `[level/dance, e.g. Blues & Balboa]` |
+| **Description** | `[Short description of the workshop or class — what students will work on, who it's for. E.g. "A Blues fundamentals workshop for new and continuing dancers."]` |
+| **Dates** | `[Dates: e.g. Mar 5–Apr 15]` |
+| **Details** | `[Venue / Register link]` |
 
-### Show Card #3
+### Event Card #2
 
 | Field | Current Value |
 |---|---|
-| **Image (src)** | `https://via.placeholder.com/400x300/e7e5e4/44403c?text=Show+Poster` |
-| **Image Alt Text** | `Promotional image for [Show Name]` |
+| **Image (src)** | `https://via.placeholder.com/400x300/e7e5e4/44403c?text=Event+Flyer` |
+| **Image Alt Text** | `Promotional image for [Event Name]` |
 | **Event Date** | `[Month DD, YYYY]` |
-| **Show Title** | `[Show / Exhibition Title]` |
+| **Event Title** | `[Workshop / Class / Event Title]` |
 | **Venue** | `[Venue Name]` |
-| **City, Country** | `[City, Country]` |
-| **Description** | `[Short description. E.g. "Open studio event — come see works in progress and new completed pieces."]` |
-| **Date range** | `[Dates]` |
-| **Location details** | `[Location details]` |
+| **City, dance** | `[City]` |
+| **Description** | `[Short description. E.g. "A Balboa workshop focused on footwork and rhythm for intermediate dancers."]` |
+| **Dates** | `[Dates]` |
+| **Details** | `[Venue / Register link]` |
 
-**Add more shows here (copy the block below for each new event):**
+### Event Card #3
+
+| Field | Current Value |
+|---|---|
+| **Image (src)** | `https://via.placeholder.com/400x300/e7e5e4/44403c?text=Event+Flyer` |
+| **Image Alt Text** | `Promotional image for [Event Name]` |
+| **Event Date** | `[Month DD, YYYY]` |
+| **Event Title** | `[Workshop / Class / Event Title]` |
+| **Venue** | `[Venue Name]` |
+| **City, dance** | `[City]` |
+| **Description** | `[Short description. E.g. "A weekend social dance event — join us on the floor! Open to all levels."]` |
+| **Dates** | `[Dates]` |
+| **Details** | `[Venue / Register link]` |
+
+**Add more events here (copy the block below for each new event):**
 
 ```
---- Show Card #4 ---
+--- Event Card #4 ---
 Image src: [URL or local path]
 Image alt: [Description of the image]
 Event Date: [Month DD, YYYY]
-Show Title: [Exhibition/Event Title]
+Event Title: [Workshop/Class/Event Title]
 Venue: [Venue Name]
-City, Country: [City, Country]
-Description: [Short description of the show.]
-Date range: [e.g. Mar 5–Apr 15]
-Opening/Location details: [e.g. Opening Reception: Mar 5, 6-9pm]
+City + dance: [City], [level/dance]
+Description: [Short description of the workshop/class/event.]
+Dates: [e.g. Mar 5–Apr 15]
+Details: [Venue / Register link]
 ```
 
 ---
@@ -193,7 +207,7 @@ Opening/Location details: [e.g. Opening Reception: Mar 5, 6-9pm]
 
 | Field | Current Value |
 |---|---|
-| **Copyright Name** | `[Artist Name]` |
+| **Copyright Name** | `gromb` |
 | **Copyright Year** | `2026` |
 | **Instagram URL** | `[https://instagram.com/handle]` |
 | **Email** | `[email@example.com]` |
@@ -205,10 +219,11 @@ Opening/Location details: [e.g. Opening Reception: Mar 5, 6-9pm]
 To autopopulate the entire site, replace these key fields across `index.html`:
 
 ```
-[Artist Name]      → appears 9 times (title, meta, h1, nav, footer, JSON-LD)
-[medium/art form]  → appears 3 times (meta description, tagline)
-[location]         → appears 2 times (meta description, tagline)
+[Gromb]            → replaced with `gromb` (name: title, meta, h1, nav, footer, JSON-LD)
+Jazz Dance Instructor · San Francisco → tagline
 [email@example.com] → appears 2 times (about section, footer)
 [https://example.com] → appears 3 times (og:url, JSON-LD url, JSON-LD image)
 [https://instagram.com/handle] → appears 2 times (JSON-LD, footer)
 ```
+
+> Almost all role-placement values (`gromb`, `San Francisco`, `they/them`, section titles, Home Scenes) are already filled in. Remaining placeholders are facts the real gromb will provide later: accolade tags, milestone descriptions, social/contact links, and event details (per `memory-bank/to-do/personalize_gromb.md` Q4–Q6).

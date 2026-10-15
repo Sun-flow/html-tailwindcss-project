@@ -18,6 +18,7 @@ This is the **index/hub file** for the memory bank. Every file in `memory-bank/`
 | `review-edits/consistency-checker-review.md` | Consistency-checker validation: cross-file agreement and freshness | 2026-10-14 |
 | `archive/` | Superseded content — archive, don't delete | 2026-10-14 |
 | `pagespeed/error-exploration.md` | PSI diagnosis: doctype & meta description flags are a GitHub Codespaces interstitial artifact, not an `index.html` defect | 2026-10-15 |
+| `to-do/personalize_gromb.md` | Handoff checklist for the site personalization task + user answers to blocking questions | 2026-10-15 |
 
 ## Root Documentation
 
@@ -29,7 +30,8 @@ This is the **index/hub file** for the memory bank. Every file in `memory-bank/`
 | `README.es.md` | Human-facing readme (Spanish) |
 | `learn.json` | Template metadata for 4Geeks Academy |
 | `memory-bank-generator-prompt.md` | The prompt used to generate this memory bank — an init instruction for AI agents |
-| `assets/content.md` | Human-readable content source: all placeholder text extracted from `index.html` by section, for editing and autopopulation |
+| `assets/content.md` | Human-readable content source: all placeholder text extracted from `index.html` by section, for editing and autopopulation — now mirrors the **jazz dance instructor** site for gromb | 2026-10-15 |
+| `assets/gromb-bio.md` | Brief professional bio for gromb (SF jazz dance instructor, Blues & Balboa, they/them); source of truth for hero/About/JSON-LD copy | 2026-10-15 |
 | `styles.css` | Custom stylesheet complementing Tailwind — 7 features: design tokens, smooth scroll + navbar offset, masonry gallery, image hover, timeline polish, print styles, shimmer placeholders |
 
 ## Agent Configuration
